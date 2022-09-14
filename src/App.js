@@ -2,7 +2,7 @@
 
 import './App.css';
 import Header from './components/Header';
-import Books from './components/pages/Books';
+import Books from './pages/Books';
 
 function App() {
   return (
