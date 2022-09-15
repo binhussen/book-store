@@ -5,7 +5,7 @@ const Header = () => (
     <h1 className="text-3xl font-bold font-sans text-primary">BookStore CMS</h1>
     <ul className="flex gap-10 grow">
       <li>BOOKS</li>
-      <li>CATAGORIES</li>
+      <li className="opacity-50">CATAGORIES</li>
     </ul>
     <button
       type="button"

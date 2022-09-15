@@ -10,6 +10,7 @@ const Books = () => (
       <Book />
       <Book />
     </div>
+    <div className="h-0.5 w-[100%] my-8 bg-w1" />
     <AddBook />
   </section>
 );
