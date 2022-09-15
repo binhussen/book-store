@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  .btn {
-    @apply font-serif cursor-pointer font-light text-sm text-secondary;
-  }
-}
-
 * {
   margin: 0;
   padding: 0;
