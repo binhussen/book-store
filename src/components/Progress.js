@@ -1,18 +1,7 @@
-/**
- * /* eslint-disable react/prop-types
- *
- * @format
- */
-
-/**
- * /* eslint-disable react/prop-types
- *
- * @format
- */
-
 /** @format */
 
-// eslint-disable-next-line react/prop-types
+import PropTypes from 'prop-types';
+
 const Progress = ({ progress }) => {
   const { percent, chapter } = progress;
   return (
@@ -45,6 +34,13 @@ const Progress = ({ progress }) => {
       </div>
     </div>
   );
+};
+
+Progress.propTypes = {
+  progress: {
+    chapter: PropTypes.string.isRequired,
+    percent: PropTypes.string.isRequired,
+  }.isRequired,
 };
 
 export default Progress;
