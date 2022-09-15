@@ -9,9 +9,11 @@ const AddBook = () => (
         placeholder="Book title"
         required
       />
-      <select className="w-[30%] p-3 border border-w1 bg-white text-base">
-        <option value="Action">Action</option>
-      </select>
+      <input
+        className="w-[30%] p-3 border border-w1 bg-white text-base"
+        placeholder="Author"
+        required
+      />
       <button
         type="submit"
         className="text-white font-bold font-serif px-6 py-2 rounded-md bg-primary cursor-pointer w-[20%]"
