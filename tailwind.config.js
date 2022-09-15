@@ -9,8 +9,10 @@ module.exports = {
     extend: {},
     colors: {
       primary: '#0290ff',
+      secondary: '#4386bf',
       white: '#fff',
       w1: '#e8e8e8',
+      w2: '#fafafa',
     },
   },
   plugins: [],
