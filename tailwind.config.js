@@ -13,6 +13,7 @@ module.exports = {
       white: '#fff',
       w1: '#e8e8e8',
       w2: '#fafafa',
+      blue1: '#307bbe',
     },
   },
   plugins: [],
