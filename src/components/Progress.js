@@ -37,10 +37,10 @@ const Progress = ({ progress }) => {
 };
 
 Progress.propTypes = {
-  progress: {
-    chapter: PropTypes.string.isRequired,
-    percent: PropTypes.string.isRequired,
-  }.isRequired,
+  progress: PropTypes.shape({
+    chapter: PropTypes.number.isRequired,
+    percent: PropTypes.number.isRequired,
+  }).isRequired,
 };
 
 export default Progress;
