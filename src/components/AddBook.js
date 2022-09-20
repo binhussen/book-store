@@ -23,11 +23,10 @@ const AddBook = () => {
     e.preventDefault();
     if (!title.trim() || !author.trim()) return;
     const newBook = {
-      id: uuidv4(),
+      item_id: uuidv4(),
       title,
-      category: 'Software',
       author,
-      progress: { percent: 0, chapter: 1 },
+      category: 'Software',
     };
     dispatch(createBook(newBook));
     setTitle('');
