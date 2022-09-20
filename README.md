@@ -6,7 +6,7 @@
 
 ## Live Demo
 
-> Coming Soon ...
+[Live link here](https://binhussen.github.io/book-store/)
 
 
 ## Built With
