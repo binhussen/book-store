@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 const Progress = ({ progress }) => {
   const { percent, chapter } = progress;
   return (
-    <div className="flex">
+    <div className="flex justify-between">
       <div className="flex items-center gap-5">
         <div className="w-16 h-16 border-4 border-blue1 rounded-full border-l-w1" />
         <div>
@@ -18,7 +18,7 @@ const Progress = ({ progress }) => {
           </p>
         </div>
       </div>
-      <div className="w-0.5 bg-w1 mx-16" />
+      <div className="w-0.5 bg-w1 mx-4 lg:mx-16 md:mx-8" />
       <div className="mr-4">
         <p className="opacity-50 uppercase text-sm">Current Chapter</p>
         <p className="text-lg">

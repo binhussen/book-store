@@ -36,10 +36,13 @@ const AddBook = () => {
   return (
     <div>
       <h2 className="text-lg font-bold opacity-60">ADD NEW BOOK</h2>
-      <form className="flex gap-8 mt-5" onSubmit={handleSubmit}>
+      <form
+        className="flex gap-8 mt-5 flex-col md:flex-row"
+        onSubmit={handleSubmit}
+      >
         <input
           type="text"
-          className="w-[50%] p-3 border border-w1 bg-white text-base"
+          className="p-3 border border-w1 bg-white text-base w-[100%] md:w-[50%]"
           placeholder="Book title"
           value={title}
           onChange={handleTitleChange}
@@ -47,7 +50,7 @@ const AddBook = () => {
         />
         <input
           type="text"
-          className="w-[30%] p-3 border border-w1 bg-white text-base"
+          className="p-3 border border-w1 bg-white text-base w-[100%] md:w-[30%]"
           placeholder="Author"
           value={author}
           onChange={handleAuthorChange}
@@ -55,7 +58,7 @@ const AddBook = () => {
         />
         <button
           type="submit"
-          className="text-white font-bold font-serif px-6 py-2 rounded-md bg-primary cursor-pointer w-[20%]"
+          className="text-white font-bold font-serif px-6 py-2 rounded-md bg-primary cursor-pointer md:w-[20%] w-[30%] mx-auto"
         >
           ADD BOOK
         </button>

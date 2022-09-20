@@ -10,14 +10,14 @@ const Action = ({ id }) => {
     dispatch(removeBook(id));
   };
   return (
-    <div className="flex items-center mt-5">
+    <div className="flex items-center flex-col md:flex-row">
       <button
         type="button"
         className="font-serif cursor-pointer font-light text-sm text-secondary"
       >
         Comment
       </button>
-      <div className="mx-4 bg-w1 h-6 w-0.5" />
+      <div className="my-2 md:mx-4 bg-w1 w-16 md:h-6 h-0.5 md:w-0.5" />
       <button
         type="button"
         className="font-serif cursor-pointer font-light text-sm text-secondary"
@@ -25,7 +25,7 @@ const Action = ({ id }) => {
       >
         Remove
       </button>
-      <div className="mx-4 bg-w1 h-6 w-0.5" />
+      <div className="my-2 md:mx-4 bg-w1 w-16 md:h-6 h-0.5 md:w-0.5" />
       <button
         type="button"
         className="font-serif cursor-pointer font-light text-sm text-secondary"

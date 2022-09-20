@@ -12,11 +12,13 @@ const Book = ({ book }) => {
     chapter: Math.floor(Math.random() * 20),
   };
   return (
-    <div className="p-8 bg-white rounded border border-w1 flex justify-between">
-      <div>
-        <p className="font-bold opacity-50">{category}</p>
-        <h2 className="font-bold text-xl">{title}</h2>
-        <p className="text-sm font-light text-secondary">{author}</p>
+    <div className="p-8 bg-white rounded border border-w1 flex justify-between flex-col md:flex-row gap-4">
+      <div className="flex md:flex-col justify-between border-w1 border-b md:border-0">
+        <div>
+          <p className="font-bold opacity-50">{category}</p>
+          <h2 className="font-bold text-xl">{title}</h2>
+          <p className="text-sm font-light text-secondary">{author}</p>
+        </div>
         <Action id={item_id} />
       </div>
       <Progress progress={progress} />
