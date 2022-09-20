@@ -1,16 +1,22 @@
 /** @format */
 
-import { useSelector } from 'react-redux';
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import AddBook from '../components/AddBook';
 import Book from '../components/Book';
+import { getBooks } from '../redux/books/books';
 
 const Books = () => {
+  const dispatch = useDispatch();
   const books = useSelector((state) => state.books);
+  useEffect(() => {
+    dispatch(getBooks());
+  }, []);
   return (
     <section className="p-[5%] bg-w2">
       <div className="flex flex-col gap-4">
         {books.map((book) => (
-          <Book key={book.id} book={book} />
+          <Book key={book.item_id} book={book} />
         ))}
       </div>
       <div className="h-0.5 w-[100%] my-8 bg-w1" />
